@@ -1,0 +1,47 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.loading {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0.8;
+    -fx-background-color: #2B569A;
+}
+.label{
+    -fx-text-fill: #ffffff;
+}
+.title{
+    -fx-font: 40px initial;
+}
+.close{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.progress-bar {
+    -fx-indeterminate-bar-length: 60;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+}
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-accent, -7%), derive(-fx-accent, 0%), derive(-fx-accent, -3%), derive(-fx-accent, -9%) );
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.2em;
+}
+.progress-bar:indeterminate > .bar {
+    -fx-background-color: linear-gradient(to left, transparent, -fx-accent);
+}
+.progress-bar > .track {
+    -fx-background-color: 
+        -fx-shadow-highlight-color,
+        linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+        linear-gradient(to bottom, 
+        derive(-fx-control-inner-background, -7%),
+        derive(-fx-control-inner-background, 0%),
+        derive(-fx-control-inner-background, -3%),
+        derive(-fx-control-inner-background, -9%)
+        );
+    -fx-background-insets: 0, 0 0 0 0, 0 0 0 0;
+    -fx-background-radius:  0, 0, 0;
+}

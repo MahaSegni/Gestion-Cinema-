@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddTypeAbonnementController">
+   <children>
+      <Label layoutX="337.0" layoutY="186.0" text="Type">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="224.0" text="Description">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="333.0" layoutY="264.0" text="Prix">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="333.0" layoutY="308.0" text="Image">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="353.0" text="Places disponibles">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <TextField fx:id="tfType" layoutX="466.0" layoutY="175.0" />
+      <TextField fx:id="tfDescription" layoutX="466.0" layoutY="213.0" />
+      <TextField fx:id="tfPrix" layoutX="466.0" layoutY="253.0" />
+      <TextField fx:id="tfPlacesdispo" layoutX="466.0" layoutY="349.0" />
+      <Button fx:id="ButtonAjouterType" layoutX="466.0" layoutY="468.0" mnemonicParsing="false" onAction="#AjouterTypeAbo" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #00acd5;" text="Ajouter" />
+      <Label layoutX="281.0" layoutY="75.0" text="Ajouter un type d'abonnement">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="tfImage" layoutX="466.0" layoutY="292.0" mnemonicParsing="false" onAction="#importer_img" prefHeight="35.0" prefWidth="149.0" style="-fx-background-color: #00acd5;" text="choisir une affiche" />
+      <Label fx:id="tfImage_nom" layoutX="635.0" layoutY="301.0" prefHeight="17.0" prefWidth="191.0" text="Aucune image n'a été sélectionnée" />
+      <Button fx:id="ButtonConsulterType" layoutX="615.0" layoutY="468.0" mnemonicParsing="false" onAction="#Consulter_typeabo" style="-fx-background-color: #00acd5;" text="Consulter la liste " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddabonneController">
+    <children>
+        <Label fx:id="erreur_champ_vide" layoutX="147.0" layoutY="546.0" minHeight="16" minWidth="69" text="Tous les champs doivent être remplis!!" textFill="#e41414">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="tfNom" layoutX="282.0" layoutY="123.0" />
+      <TextField fx:id="tfPrenom" layoutX="282.0" layoutY="178.0" />
+      <TextField fx:id="tfMail" layoutX="282.0" layoutY="241.0" />
+      <TextField fx:id="tfTel" layoutX="282.0" layoutY="364.0" />
+      <Button fx:id="ButtonAjouter" layoutX="479.0" layoutY="546.0" mnemonicParsing="false" onAction="#AjouterAbonne" prefHeight="17.0" prefWidth="181.0" style="-fx-background-color: #00acd5;" text="S'inscrire">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="107.0" layoutY="103.0" prefHeight="66.0" prefWidth="96.0" text="Nom">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="178.0" prefHeight="25.0" prefWidth="55.0" text="Prenom">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="101.0" layoutY="439.0" text="Mot de passe">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="103.0" layoutY="368.0" text="Telephone">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="109.0" layoutY="230.0" prefHeight="66.0" prefWidth="131.0" text="Adresse email">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="309.0" text="Date de naissance">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font></Label>
+      <DatePicker fx:id="tfDatenaiss" layoutX="282.0" layoutY="305.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="erreur_numtel" layoutX="442.0" layoutY="367.0" prefHeight="19.0" prefWidth="239.0" text="Veuillez saisir un numéro valide !!" textFill="#e41414">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="276.0" layoutY="28.0" prefHeight="17.0" prefWidth="305.0" text="Inscription" textAlignment="JUSTIFY">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="erreur_mail" layoutX="442.0" layoutY="244.0" prefHeight="19.0" prefWidth="239.0" text="Veuillez saisir une adresse email valide !!" textFill="#e41414">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="erreur_mail_exist" layoutX="442.0" layoutY="244.0" prefHeight="19.0" prefWidth="239.0" text="Adresse mail utilisée !!" textFill="#e41414">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="494.0" text="Confirmer mot de passe">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirm_mdp" layoutX="450.0" layoutY="493.0" prefHeight="19.0" prefWidth="239.0" text="N'est pas valide!" textFill="#e41414">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfPassword" layoutX="282.0" layoutY="427.0" />
+      <PasswordField fx:id="tfConfirmPassword" layoutX="282.0" layoutY="490.0" />
+      <Label fx:id="confirm_mdp_valide" layoutX="450.0" layoutY="493.0" prefHeight="19.0" prefWidth="239.0" text="Valide!" textFill="#478608">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

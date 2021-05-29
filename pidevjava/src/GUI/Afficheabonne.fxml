@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="TableviewAbonne" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficheabonneController">
+   <columns>
+      <TableColumn fx:id="colid" prefWidth="75.0" text="Id" />
+      <TableColumn fx:id="colNom" prefWidth="75.0" text="Nom" />
+      <TableColumn fx:id="colPrenom" prefWidth="75.0" text="Prenom" />
+      <TableColumn fx:id="colMail" prefWidth="75.0" text="Mail" />
+      <TableColumn fx:id="colDatenaiss" prefWidth="127.0" text="Date de naissance" />
+      <TableColumn fx:id="colNum" prefWidth="145.0" text="Numéro de téléphone" />
+      <TableColumn fx:id="colPassword" prefWidth="151.0" text="Password" />
+   </columns>
+</TableView>

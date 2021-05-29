@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FrontController">
+   <children>
+      <SplitPane dividerPositions="0.7368922783603432" prefHeight="649.0" prefWidth="1051.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="378.0">
+               <children>
+                  <TableView fx:id="tableEvenement" layoutX="23.0" layoutY="50.0" onMouseClicked="#onClick" prefHeight="475.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="nom" prefWidth="199.19999313354492" text="nom" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="294.0" layoutY="121.0" text="Nom evenement" textFill="#003cff" />
+                  <Label layoutX="295.0" layoutY="157.0" text="date de l'évenement" textFill="#003cff" />
+                  <Label layoutX="294.0" layoutY="192.0" text="duree de l'évenement" textFill="#003cff" />
+                  <Label layoutX="294.0" layoutY="227.0" text="date fin de l'évenement" textFill="#003cff" />
+                  <Label layoutX="294.0" layoutY="263.0" text="emplacement de l'évenement" textFill="#003cff" />
+                  <Label layoutX="294.0" layoutY="297.0" text="place disponible" textFill="#003cff" />
+                  <Label fx:id="eve_nom" layoutX="516.0" layoutY="122.0" />
+                  <Label fx:id="eve_date" layoutX="517.0" layoutY="158.0" />
+                  <Label fx:id="eve_duree" layoutX="517.0" layoutY="193.0" />
+                  <Label fx:id="eve_fin" layoutX="517.0" layoutY="228.0" />
+                  <Label fx:id="eve_emp" layoutX="517.0" layoutY="264.0" />
+                  <Label fx:id="eve_place" layoutX="517.0" layoutY="298.0" />
+                  <Label layoutX="348.0" layoutY="50.0" text="Details de l'évenement" textFill="#ff0587">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="part" layoutX="341.0" layoutY="388.0" mnemonicParsing="false" onAction="#onParticipe" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #ff6b6b;" text="Participer" />
+                  <Button fx:id="quit" layoutX="489.0" layoutY="388.0" mnemonicParsing="false" onAction="#onquit" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #ff6b6b;" text="quit" />
+                  <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: #ff6b6b;" text="Menu" />
+                  <DatePicker fx:id="filter_start" layoutX="589.0" layoutY="117.0" />
+                  <DatePicker fx:id="filter_end" layoutX="590.0" layoutY="154.0" />
+                  <Button fx:id="btn_filter" layoutX="625.0" layoutY="189.0" mnemonicParsing="false" onAction="#onFilter" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #ff6b6b;" text="Button" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="256.0">
+               <children>
+                  <ComboBox fx:id="combo_comment" layoutX="197.0" layoutY="173.0" prefWidth="150.0" />
+                  <Label layoutX="27.0" layoutY="177.0" text="Nom de l'evenement" />
+                  <TextArea fx:id="text_comment" layoutX="197.0" layoutY="222.0" prefHeight="209.0" prefWidth="318.0" promptText="write your comment here" />
+                  <Label fx:id="t" layoutX="27.0" layoutY="222.0" text="Commentaire" />
+                  <Label layoutX="187.0" layoutY="67.0" text="Commentaire ">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="260.0" layoutY="462.0" mnemonicParsing="false" onAction="#onAjout" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: #ff6b6b;" text="ajouter" />
+                  <TableView fx:id="table_comment" layoutX="553.0" layoutY="135.0" prefHeight="423.0" prefWidth="388.0">
+                    <columns>
+                        <TableColumn fx:id="col_comment" prefWidth="387.1999206542969" text="content" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

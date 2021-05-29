@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#agenda" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuController">
+   <children>
+      <ImageView fx:id="logo" fitHeight="189.0" fitWidth="165.0" layoutX="300.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../xampp/htdocs/integration/integration/projet/projet/projet/public/images1/logojava.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="gestionEmploye" layoutX="51.0" layoutY="140.0" mnemonicParsing="false" onAction="#gestEmp" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="Gestion Des Employés" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="label" layoutX="297.0" layoutY="87.0" prefHeight="60.0" prefWidth="209.0" text="welcome" textFill="#45b2cd">
+         <font>
+            <Font name="Berlin Sans FB" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="gestionFilm" layoutX="51.0" layoutY="372.0" mnemonicParsing="false" onAction="#gestFil" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="Gestion Des Film" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="gestionConge" layoutX="49.0" layoutY="220.0" mnemonicParsing="false" onAction="#gestCon" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="Gestion Des Conges" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="gestionCinema" layoutX="49.0" layoutY="295.0" mnemonicParsing="false" onAction="#gestCinema" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="Gestion Cinema" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+ <Button fx:id="gestionReclamation" layoutX="446.0" layoutY="285.0" mnemonicParsing="false" onAction="#gestReqclamation" prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="       Gestion des réclamations" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="14.0" />
+         </font></Button>
+    <Button fx:id="gestionEquipement" layoutX="443.0" layoutY="362.0" mnemonicParsing="false" onAction="#gestEquipemet" prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="             Gestion des équipements" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="gestionParking" layoutX="441.0" layoutY="536.0" mnemonicParsing="false" onAction="#gestionParking" prefHeight="35.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="Gestion parking" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="agenda" layoutX="443.0" layoutY="483.0" mnemonicParsing="false" onAction="#agenda" prefHeight="35.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="Agenda" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+   <Button fx:id="gestionPlat" layoutX="51.0" layoutY="456.0" mnemonicParsing="false" onAction="#gestionPlat" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="gestion des plat" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="gestionCat" layoutX="51.0" layoutY="536.0" mnemonicParsing="false" onAction="#gestionCat" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #00acd5;" text="gestion des catégorie" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="441.0" layoutY="153.0" mnemonicParsing="false" onAction="#gestionAbonnement" prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="             Gestion des abonnements " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="443.0" layoutY="221.0" mnemonicParsing="false" onAction="#gestEven" prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="     Gestion des évenemets" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="39.0" layoutY="220.0">
+         <image>
+            <Image url="@../images/kisspng-clip-art-product-design-human-behavior-organizatio-travel-svg-png-icon-free-download-5-65-8-onli-5b8c233ad24dc6.1118531515359107148614.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="51.0" layoutY="295.0">
+         <image>
+            <Image url="@../images/claim.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="47.0" layoutY="150.0">
+         <image>
+            <Image url="@../images/office-worker-outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="44.0" layoutY="448.0">
+         <image>
+            <Image url="@../images/IconPlat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="47.0" layoutY="372.0">
+         <image>
+            <Image url="@../images/unnamed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="446.0" layoutY="483.0">
+         <image>
+            <Image url="@../images/image.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="441.0" layoutY="426.0" mnemonicParsing="false" onAction="#gestCellu" prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: #00acd5;" text="Gestion des cellules" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="442.0" layoutY="531.0">
+         <image>
+            <Image url="@../images/parking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="442.0" layoutY="285.0">
+         <image>
+            <Image url="@../images/828_Medical_Report_Claim-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="36.0" layoutY="531.0">
+         <image>
+            <Image url="@../images/iconCat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="442.0" layoutY="153.0">
+         <image>
+            <Image url="@../images/1260109.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="437.0" layoutY="217.0">
+         <image>
+            <Image url="@../images/29940.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="437.0" layoutY="422.0">
+         <image>
+            <Image url="@../images/51778.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="46.0" layoutX="442.0" layoutY="358.0">
+         <image>
+            <Image url="@../images/services--v1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="27.0" layoutY="25.0" mnemonicParsing="false" onAction="#btn_logout" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #00acd5;" text="Se déconnecter" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="12.0" />
+         </font>
+      </Button>
+   
+
+   </children>
+</AnchorPane>

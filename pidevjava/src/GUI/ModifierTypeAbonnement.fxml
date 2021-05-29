@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifierTypeAbonnementController">
+   <children>
+      <Label layoutX="284.0" layoutY="227.0" text="Type">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="265.0" text="Description">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="305.0" text="Prix">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="349.0" text="Image">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="394.0" text="Places disponibles">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfType" layoutX="413.0" layoutY="216.0" />
+      <TextField fx:id="tfDescription" layoutX="413.0" layoutY="254.0" />
+      <TextField fx:id="tfPrix" layoutX="413.0" layoutY="294.0" />
+      <TextField fx:id="tfPlacesdispo" layoutX="413.0" layoutY="390.0" />
+      <Button fx:id="ButtonModifierType" layoutX="524.0" layoutY="452.0" mnemonicParsing="false" onAction="#ModifierTypeAbo" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #00acd5;" text="Modifier" />
+      <Button fx:id="tfImage" layoutX="413.0" layoutY="333.0" mnemonicParsing="false" onAction="#importer_img" prefHeight="35.0" prefWidth="149.0" style="-fx-background-color: #00acd5;" text="choisir une affiche" />
+      <Label fx:id="tfImage_nom" layoutX="582.0" layoutY="342.0" prefHeight="17.0" prefWidth="191.0" text="Aucune image n'a été sélectionnée" />
+      <Button fx:id="ButtonConsulterType" layoutX="644.0" layoutY="452.0" mnemonicParsing="false" onAction="#Consulter_typeabo" style="-fx-background-color: #00acd5;" text="Consulter la liste " />
+      <Text layoutX="354.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier Type Abonnement">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

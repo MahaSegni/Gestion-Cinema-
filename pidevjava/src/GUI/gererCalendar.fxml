@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GererCalendarController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5d8da" height="292.0" layoutX="123.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+      <Text layoutX="217.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" />
+      <TextField fx:id="titreCal" layoutX="147.0" layoutY="228.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="datedCal" layoutX="146.0" layoutY="280.0" />
+      <DatePicker fx:id="datefCal" layoutX="145.0" layoutY="334.0" />
+      <TextField fx:id="descCal" layoutX="146.0" layoutY="388.0" prefHeight="25.0" prefWidth="174.0" />
+      <Text layoutX="196.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Debut" />
+      <Text layoutX="206.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Fin" />
+      <Text layoutX="197.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Button fx:id="ajtCal" layoutX="134.0" layoutY="434.0" mnemonicParsing="false" onAction="#ajouterCalendrier" style="-fx-background-color: #00acd5;" text="Ajouter" textFill="#fffdfd" />
+      <Button fx:id="modCal" layoutX="197.0" layoutY="434.0" mnemonicParsing="false" onAction="#modifierCalendrier" style="-fx-background-color: #00acd5;" text="Modifier" textFill="#f5f2f2" />
+      <Button fx:id="suppCal" layoutX="267.0" layoutY="434.0" mnemonicParsing="false" onAction="#supprimerCalendrier" style="-fx-background-color: #00acd5;" text="Supprimer" textFill="#f2f0f0" />
+      <TableView fx:id="listeCalendrier" layoutX="463.0" layoutY="191.0" onMouseClicked="#getSelected" prefHeight="239.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="titre" prefWidth="88.0" text="Titre" />
+          <TableColumn fx:id="dateDebut" prefWidth="81.0" text="Date Debut" />
+            <TableColumn fx:id="dateFin" prefWidth="93.0" text="Date Fin" />
+            <TableColumn fx:id="description" prefWidth="143.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="voirCal" layoutX="655.0" layoutY="444.0" mnemonicParsing="false" onAction="#planing_seance" style="-fx-background-color: #00acd5;" text="Voir dans agenda" textFill="#f2eeee" />
+      <Label layoutX="322.0" layoutY="42.0" prefHeight="60.0" prefWidth="226.0" text="Calendrier" textFill="#00acd5">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="43.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onAction="#Menu" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #00acd5;" text="Menu" />
+   </children>
+</AnchorPane>

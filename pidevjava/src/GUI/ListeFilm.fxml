@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListeFilmController">
+   <children>
+      <Label layoutX="331.0" layoutY="65.0" text="Liste des films">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="871.0" layoutY="210.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #00acd5;" text="Ajouter" />
+      <Button fx:id="supprimer" layoutX="871.0" layoutY="309.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #00acd5;" text="Supprimer" />
+      <Button fx:id="bt_cinema" layoutX="93.0" layoutY="50.0" mnemonicParsing="false" onAction="#retourCinema" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: #00acd5;" text="Menu" />
+      <Label layoutX="23.0" layoutY="119.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pagination fx:id="pagination" layoutX="21.0" layoutY="162.0" maxPageIndicatorCount="5" pageCount="5" prefHeight="409.0" prefWidth="841.0" />
+      <TextField fx:id="rechercher" layoutX="619.0" layoutY="70.0" prefHeight="36.0" prefWidth="164.0" />
+      <Button fx:id="chercher" layoutX="800.0" layoutY="70.0" mnemonicParsing="false" onAction="#RechercheAV" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #00acd5;" text="Chercher" />
+      <Button fx:id="qrcode" layoutX="871.0" layoutY="424.0" mnemonicParsing="false" onAction="#generate_qr" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #00acd5;" text="QR Code" />
+   </children>
+</AnchorPane>

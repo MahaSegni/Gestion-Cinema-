@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReservationController">
+   <children>
+      <TableView fx:id="tabRes" layoutX="390.0" layoutY="225.0" onMouseClicked="#getSelected" prefHeight="213.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="matRes" prefWidth="108.0" text="Matricule" />
+          <TableColumn fx:id="dateDeb" prefWidth="110.0" text="Date Debut" />
+            <TableColumn fx:id="dateFin" prefWidth="126.0" text="Date Fin" />
+            <TableColumn fx:id="plRes" prefWidth="173.0" text="Place réservée " />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde1e1" height="300.0" layoutX="78.0" layoutY="126.0" stroke="#fcfafa" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="suppRes" layoutX="112.0" layoutY="375.0" mnemonicParsing="false" onAction="#supprimerReservation" style="-fx-background-color: #00acd5;" text="Annuler la reservation" textFill="#f2eeee" />
+      <TextField fx:id="matricule" layoutX="97.0" layoutY="163.0" prefHeight="12.0" prefWidth="162.0" />
+      <Text layoutX="150.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" wrappingWidth="108.13671875" />
+      <DatePicker fx:id="dateD" layoutX="97.0" layoutY="216.0" prefHeight="25.0" prefWidth="162.0" />
+      <Text layoutX="148.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date début" />
+      <Text layoutX="157.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date fin" />
+      <DatePicker fx:id="dateF" layoutX="97.0" layoutY="273.0" prefHeight="25.0" prefWidth="162.0" />
+      <ComboBox fx:id="place" layoutX="97.0" layoutY="328.0" prefHeight="17.0" prefWidth="162.0" />
+      <Text layoutX="137.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place à réserver" />
+      <Button fx:id="rechRes" layoutX="747.0" layoutY="188.0" mnemonicParsing="false" onAction="#rechercherReservation" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #00acd5;" text="Recherhcher" textFill="#f8f3f3" />
+      <Button fx:id="triRes" layoutX="868.0" layoutY="188.0" mnemonicParsing="false" onAction="#trierReservation" style="-fx-background-color: #00acd5;" text="Trier" textFill="#ebeaea" />
+      <DatePicker fx:id="recRes1" layoutX="581.0" layoutY="126.0" prefHeight="16.0" prefWidth="127.0" />
+      <DatePicker fx:id="recRes2" layoutX="581.0" layoutY="174.0" prefHeight="25.0" prefWidth="127.0" />
+      <Text layoutX="582.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'entrée supérieure :" />
+      <Text layoutX="579.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'entrée inférieure :" />
+      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: #00acd5;" text="Menu" />
+      <Label layoutX="292.0" layoutY="34.0" prefHeight="51.0" prefWidth="273.0" text="Réservation" textFill="#00acd5">
+         <font>
+            <Font name="Berlin Sans FB" size="52.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

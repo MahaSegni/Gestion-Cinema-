@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GererCelluleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3d8dd" height="360.0" layoutX="138.0" layoutY="157.0" stroke="#eeebeb" strokeType="INSIDE" width="220.0" />
+      <Text fill="#00acd5" layoutX="216.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cellule">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nomCell" layoutX="174.0" layoutY="256.0" />
+      <Button fx:id="ajCel" layoutX="185.0" layoutY="381.0" mnemonicParsing="false" onAction="#ajouterCellule" style="-fx-background-color: #00acd5;" text="Ajouter" textFill="#ebe5e5" />
+      <Text layoutX="228.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" wrappingWidth="40.232421875" />
+      <Text layoutX="212.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disponibilité :" />
+      <Button fx:id="supCel" layoutX="249.0" layoutY="381.0" mnemonicParsing="false" onAction="#supprimerCellule" style="-fx-background-color: #00acd5;" text="supprimer" textFill="#f8f6f6" />
+      <TableView fx:id="listeCel" layoutX="613.0" layoutY="183.0" onMouseClicked="#getSelected" prefHeight="321.0" prefWidth="290.0">
+        <columns>
+          <TableColumn fx:id="colNomCel" prefWidth="141.0" text="Nom de la place" />
+          <TableColumn fx:id="colDispo" prefWidth="148.0" text="Disponibilité" />
+        </columns>
+      </TableView>
+      <TextField fx:id="recell" layoutX="613.0" layoutY="144.0" prefHeight="25.0" prefWidth="170.0" promptText="Search ..." />
+      <ButtonBar layoutX="490.0" layoutY="124.0" prefHeight="40.0" prefWidth="70.0" />
+    <Button fx:id="rechCell" layoutX="784.0" layoutY="144.0" mnemonicParsing="false" onAction="#rechercherCellule" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #00acd5;" text="Recherhcher" textFill="#f8f3f3" />
+      <ComboBox fx:id="Dispo" layoutX="174.0" layoutY="325.0" prefWidth="150.0" />
+      <Label layoutX="393.0" layoutY="38.0" prefHeight="69.0" prefWidth="220.0" text="Cellule" textFill="#00acd5">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="55.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="25.0" mnemonicParsing="false" onAction="#Menu" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #00acd5;" text="Menu" />
+   </children>
+</AnchorPane>
